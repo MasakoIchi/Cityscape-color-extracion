@@ -7,3 +7,8 @@ from collections import Counter
 from skimage.color immport rgb2lab, deltaE_cie76
 import os
 %matplotlib inline
+
+image = cv2.imread('sample_image.jpg')
+print("The type of this input is {}".format(type(image)))
+print("Shape: {}".format(image.shape))
+plt.imshow(image)
